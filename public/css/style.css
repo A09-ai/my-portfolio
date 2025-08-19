@@ -1,0 +1,143 @@
+body{
+   
+
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container{
+    flex: 1;
+}
+
+
+/*navbar*/
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+
+}
+
+.nav-link{
+    color: #222 !important;
+}
+
+
+
+/*footer*/
+.f-info-link a {
+    text-decoration: none;
+    color: #222;
+
+}
+
+.f-info-link a:hover {
+    text-decoration: underline;
+    color: #222;
+
+}
+
+
+
+.f-info-socials,.f-info-link,.f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info{
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/*card*/
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+    width: 100% !important;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text{
+    font-weight: 400;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+/*card efects*/
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+/*new page*/
+.add-btn{
+   background-color: #fe424d !important;
+   border: none !important;
+}
+
+/*edit page*/
+.edit-btn{
+    background-color: #fe424d !important;
+   border: none !important;
+}
+
+/*show page
+.show-img{
+      height: 30vh !important;
+      width: 100% !important;
+      object-fit: cover !important;
+
+}*/
+
+.card {
+    width: 100% !important; /* card poora row le */
+}
+
+.card-img-top.show-img {
+    height: 200px !important;   /* jitni chhoti chahiye utni height */
+    width: 40% !important;     /* card ki width ke hisaab se full */
+    object-fit: cover !important;
+    display: block;
+}
+
+.btns{
+    display: flex;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}

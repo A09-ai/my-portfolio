@@ -1,0 +1,43 @@
+    <% layout("/layouts/boilerplate.ejs")%>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <br/><br/>
+    <h3>Creat a listings</h3>
+    <form method="post" action="/listings" novalidate class="needs-validation">
+        <div class="mb-3">
+        <lable for="title" class="form-lable">Title</lable>
+        <input name="listing[title]" placeholder="enter title" class="form-control" required>
+        <div class="valid-feedback">Title looks good!</div>
+        </div>
+       <div class="mb-3">
+        <lable for="description" class="form-lable">Description</lable>
+        <textarea name="listing[description]"  class="form-control" required></textarea>
+        <div class="invalid-feedback">please enter a short description</div>
+        </div>
+       <div class="mb-3">
+        <lable for="image" class="form-lable">Image link</lable>
+        <input name="listing[image]" placeholder="enter image URL/Link" type="text" class="form-control"/>
+       </div>
+       <div class="row">
+       <div class="mb-3 col-md-4">
+         <lable for="price" class="form-lable">price</lable>
+        <input name="listing[price]" placeholder="enter price" type="number" class="form-control" required/>
+        <div class="invalid-feedback">Price should be valid</div>
+        </div>
+        <div class="mb-3 col-md-8">
+        <lable for="country" class="form-lable">country</lable>
+        <input name="listing[country]" placeholder="enter country" type="text" class="form-control" required/>
+        <div class="invalid-feedback">Price enter a country name</div>
+        </div>
+        </div>
+        <div class="mb-3">
+         <lable for="location" class="form-lable">location</lable>
+         <input name="listing[location]" placeholder="enter location" type="text" class="form-control"/>
+         <div class="invalid-feedback">Price enter a location</div>
+      </div>
+      <br/> 
+        <button  class="btn btn-dark add-btn">Add</button>
+        <br/><br/>
+    </form>
+    </div>
+    </div>
